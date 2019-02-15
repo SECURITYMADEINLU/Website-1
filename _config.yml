@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: https://cscl.lu/index.html
+url: https://cybersecuritychallenge.lu/
 title: LËTZ CYBERSECURITY CHALLENGE
 email: your-email@domain.com
 author: Security Made In LU
@@ -25,7 +25,7 @@ permalink: pretty
 
 links:
   - title: register here
-    url: https://vestatech.cscl.lu/register/
+    url: https://vestatech.cybersecuritychallenge.lu/register/
  
 vesta:
   - title: twitter
@@ -43,7 +43,8 @@ social:
   - title: envelope
     url: mailto:info@cybersecuritychallenge.lu
 
- 
+deploy:
+- rsync -aze ssh --delete ./ pst@c-3.lu:/var/www/ecsc.lu/www/ 
 
 
                 
