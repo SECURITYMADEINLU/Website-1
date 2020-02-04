@@ -34,8 +34,7 @@ h1{
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: 100% 90%;
+    background: url(../img/letzcybersec.png) no-repeat center center;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
@@ -43,7 +42,7 @@ h1{
 }
 .intro {
     position: relative;
-    padding-top: 30%;
+    padding-top: 4%;
     padding-bottom: 32%;
 }
 
