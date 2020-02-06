@@ -17,11 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
-h1{
-	color: black;
+
+h1 {
+    color: black;
 }
 
 .lead {
@@ -36,10 +37,12 @@ h1{
     color: #f8f8f8;
     background: url(../img/letzcybersec.png) no-repeat center center;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
 }
+
 .intro {
     position: relative;
     padding-top: 4%;
@@ -50,24 +53,24 @@ h1{
     margin: 5%;
     font-size: 35px;
 }
+
 /* Titles "Do you have what it takes?" & "This year's scenario"*/
 .title-div {
     position: relative;
-    padding-top: 7%;
     padding-bottom: 10%;
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -125,13 +128,13 @@ h1{
     color: #f8f8f8;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    background: url(../img/banner-bg.png) repeat ;
+    background: url(../img/banner-bg.png) repeat;
     background-size: 100%;
 }
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
 }
 
@@ -144,17 +147,17 @@ h1{
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media (max-width: 1199px) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
         font-size: 3em;
     }
 
@@ -168,133 +171,166 @@ h1{
         margin-bottom: 0;
     }
 }
+
 /*nav {
     height: 50%;
 }*/
 .start {
     padding: 50px 0;
 }
+
 li {
     list-style-type: none;
 }
+
 .btn {
-   background-color:  #ffff00;
+    background-color: #ffff00;
 }
+
 .btn-logo {
-   float: left;
-   margin: 2px;
-   size: 100%;
+    float: left;
+    margin: 2px;
+    size: 100%;
 }
+
 .socials-footer {
-  float: right;
+    float: right;
 }
+
 footer {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
+
 p.copyright {
     margin: 15px 0 0;
 }
+
 #privacyPolicy {
     margin: 60px 0 20px 0;
 }
+
 table th {
-   margin-right: 5px;
+    margin-right: 5px;
 }
+
 .logos {
-   margin: 10px 6px;
-   float: left;
+
+    float: left;
 }
+
 .icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 10px 15px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 25px;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
 }
+
 .social-icons {
-  position: fixed;
-  top: 70%;
-  right: 0px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 7;
+    position: fixed;
+    top: 70%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 7;
 }
+
 #twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
+
 #linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
+
 #facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
-#envelope{
- background-color: #DC143C;
+
+#envelope {
+    background-color: #DC143C;
 }
-#facebook:hover, #twitter:hover, #linkedin:hover, #envelope:hover{
-  background-color: #000;
-  size:75%;
+
+#facebook:hover, #twitter:hover, #linkedin:hover, #envelope:hover {
+    background-color: #000;
+    size: 75%;
 }
+
 .post-images {
-   width: 100%;
+    width: 100%;
+    height: 40vh;
 }
+
 .howTo-Link {
-  width: 50%;
-  float: left;
-  text-align: center;
-  margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
 
 }
+
 .nav-role {
-  height: 70px !important;  
-  padding: 10px 0px;
+    height: 70px !important;
+    padding: 10px 0;
 }
+
 /*
 .page-scroll {
   padding: 0 10px;
   width: 100%;
 }*/
 .menu {
-  font-size: 17px;
-}/*
+    font-size: 17px;
+}
+
+/*
 .nav-container {
 padding: 15px 15px;
 }*/
 .h1_title {
-  margin-top: 40px;
-}/*
+    margin-top: 40px;
+}
+
+/*
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
 }*/
 .navbar-default .navbar-nav {
-  background-color: #f8f8f8;
-}/*
+    background-color: #f8f8f8;
+}
+.container{
+    width:1500px !important;;
+}
+/*
 .navbar-brand {
   float: none;
 }
 */
 
 /* Block Footer */
-#footer-block1{
-   width: 30%;
-}
-#footer-block2{
-   width: 70%;
+#footer-block1 {
+    width: 30%;
 }
 
-.email{
-   color: white;
+#footer-block2 {
+    width: 70%;
 }
-.email:hover{
-  color: #ccc;
+
+.email {
+    color: white;
 }
-.navbar-brand{
-  padding: 15px 2px;
+
+.email:hover {
+    color: #ccc;
+}
+
+.navbar-brand {
+    padding: 15px 2px;
 }

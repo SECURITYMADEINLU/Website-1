@@ -1,6 +1,6 @@
 ---
 layout: default
-img: coding.jpg
+img: Experts.jpg
 category: Services
 title: This is for IT experts only, right?
 description: |

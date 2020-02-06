@@ -1,6 +1,6 @@
 ---
 layout: default
-img: coding.jpg
+img: adventurecontinues.jpg
 category: Services
 title: The adventure continues..
 description: |
