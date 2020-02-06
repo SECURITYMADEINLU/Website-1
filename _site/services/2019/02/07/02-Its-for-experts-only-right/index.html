@@ -1,501 +1,76 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CYBERSECURITYCHALLENGE - COMING SOON</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            margin:0;
+            padding:0;
+            width:100%;
+            height: 100%;
+        }
+        #landing-page{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width:100%;
+            height:100%;
+            background:#2B5C97;
+        }
+        #counter{
+            font-family: 'Press Start 2P', cursive;
+            color:white;
+            font-weight: bolder;
+            font-size:2.5em;
+        }
+        #landing-page-text{
+            font-family: 'Press Start 2P', cursive;
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="VestaTech a fictitious Luxembourgish start-up is in an arms race with a large international conglomerate to reach for and exploit the resources of a close by asteroid. Join us in this imaginative adventure where not everyone will play fair. Who knew that the last frontier in space would be digital? Soon, you'll be able to show us what you really got!">
-    <meta name="author" content="Security Made In LU">
-
-    <title>This is for IT experts only, right?</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+            color:white;
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
-
-
-	<body>
-		<div class="icon-bar social-icons at-share-dock.atss">
-	
-        <li>
-               <a href="https://twitter.com/@CSCLuxembourg" id="twitter" class="" target="_blank"><i class="fa fas fa-twitter"></i> </a>
-        </li>
-        
-        <li>
-               <a href="https://m.facebook.com/CyberSecurity-Challenge-Luxembourg-336947350423217" id="facebook" class="" target="_blank"><i class="fa fas fa-facebook"></i> </a>
-        </li>
-        
-        <li>
-               <a href="https://www.linkedin.com/showcase/cscluxembourg/" id="linkedin" class="" target="_blank"><i class="fa fas fa-linkedin"></i> </a>
-        </li>
-        
-        <li>
-               <a href="mailto:info@cybersecuritychallenge.lu" id="envelope" class="" target="_blank"><i class="fa fas fa-envelope"></i> </a>
-        </li>
-        
+<body>
+<div id="landing-page">
+    <div id="counter">
+        <span id="demo"></span>
+    </div>
+    <div id="landing-page-img">
+        <img src="../img/services/logo.png">
+    </div>
+    <div id="landing-page-text">
+        <p>THE ADVENTURE IS COMING SOON...</p>
+    </div>
 </div>
+<script>
 
- 
-		<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top nav-role" role="navigation">
-    <div class="container nav-container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#home">LËTZ CYBERSECURITY CHALLENGE</a>
+    var countDownDate = new Date("Feb 11, 2020 12:00:00").getTime();
 
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll menu" href="#register">Register</a>
-                </li>
-                <li>
-                    <a class="page-scroll menu" href="#services">Info</a>
-                </li>
-                <li>
-                    <a class="page-scroll menu" href="#scenario">The Scenario</a>
-                </li>
-                <li>
-                    <a class="page-scroll menu" href="#contact">Contact</a>
-                </li>
+    var x = setInterval(function() {
 
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+        var now = new Date().getTime();
 
-<section id="home">
-    <!-- Header -->
-    <div class="intro-header">
+        var distance = countDownDate - now;
 
-        <div class="container">
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="intro">
 
-                            </div>
-                        </div>
-                    </div>
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
 
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-</section>
-<hr>
-		    <!-- About Section -->
-    <section id="register" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                        
-		<div class="row">
-	             <div class="col-lg-12">
-                             <div class="title-div">
-                    		<h1 class="h1_title">You are a student or a professional and passionate by hacking?<br> Don't miss this adventure!</h1>
-		                    <!--  -->
-                                    <a href="https://vestatech.cybersecuritychallenge.lu/register/" class="btn btn-default btn-lg"  target="_blank"><span class="network-name">register here</span></a>
-                                    <!--  -->
-                             </div>
-                     </div>
-               </div>
-  
-            </div>
-  </section>
-
-		<section id="services">
-<!-- Page Content -->
-
-
-
-   
-  
-  
-  	
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Why is the Cybersecurity Challenge Luxembourg?</h2>
-                    <div class="lead"><p>The Cybersecurity Challenge Luxembourg is organized by C3, the Cybersecurity Competence Center Luxembourg, within the frame of the <a href="https://www.gameofcode.eu/" target="_blank">GAME OF CODE</a>.</p>
-
-<p>This competition targets open-minded creative digital natives. Our aim is not only to find talents but encourage young people to pursue a career in cybersecurity and related disciplines.</p>
-<p>Furthermore, through CSCL, we promote safe online behaviors by raising awareness on information security issues as well as develop expertise and interest in cybersecurity through challenging games and skill tests.</p>
-
-</div>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive post-images" src="img/services/logo.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    
-
-
-   
-  
-      <section class="container content-section" >
-        <div class="row">
-		 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-         		<h2>The Partners</h2>
-			<div class="imageSection">
-				<section id="services">
-					<div class="container">				
-						
-						<a href="https://www.bee-secure.lu/de"  target="_blank"><img class="img-responsive logos" src="../img/logos/bee-secure-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://www.circl.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/circl-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://www.c-3.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/c3-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://www.cases.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/cases_lu-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://digital-luxembourg.public.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/digital-luxembourg_logo.jpg" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://wwwen.uni.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/uni-lu-logo.jpg" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://portal.education.lu/script/"  target="_blank"><img class="img-responsive logos" src="../img/logos/script-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://meco.gouvernement.lu/fr.html"  target="_blank"><img class="img-responsive logos" src="../img/logos/mineco-logo.jpg" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://portal.education.lu/cgie"  target="_blank"><img class="img-responsive logos" src="../img/logos/CGIE-LU-logo.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://securitymadein.lu/"  target="_blank"><img class="img-responsive logos" src="../img/logos/Secmadein_lu.png" width="150px" height="125px" style="float:left" alt=""></a>
-						
-						<a href="https://ec.europa.eu/info/index_fr"  target="_blank"><img class="img-responsive logos" src="../img/logos/logo-ce-horizontal-en-quadri.png" width="150px" height="125px" style="float:left" alt=""></a>
-							
-					</div>
-				</section>
-               		</div>
-        	     </div>        
-		</div>
-	</div>
-     </section>
-  
-  
-  	
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">This is for IT experts only, right?</h2>
-                    <div class="lead"><p>Actually <b>NO</b>. Some challenges will clearly require IT skills. But we believe that IT security can only be tackled by employing complementary skills.</p>
-</div>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive post-images" src="img/services/coding.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    
-
-
-   
-      <section id="scenario" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-		<div class="col-lg-12">
-			<div class="title-div">
-				<h1 class="h1_title">Useful information</h1>
-			</div>
-		</div>
-		<br>
-	    </div>
-	</div>
-      </section>
-  
-  
-  
-  	
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">What is in it for you and where is it located?</h2>
-                    <div class="lead">You can win 2 tickets for the hack.lu 2020!
-
-Location:<br>
-Lëtz Cybersecurity Challenge 2020<br>
-@ Game of Code<br>
-Forum Geeseknäppchen<br>
-3 an 4 Abrëll 2020</div>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive post-images" src="img/services/location.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    
-
-
-   
-  
-  
-  	
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Agenda</h2>
-                    <div class="lead"><h4>03.04.2020</h4>
-Registration - badges - ...
-
-
-<h4>04.04.2020</h4>
-09h00 - 12h00<br>
-Individuals that compete - price ceremony - ...
-
-13h00 - 16h00<br>
-Individuals that compete - price ceremony - ...
-
-
-</div>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive post-images" src="img/services/coding.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    
-
-</section>
-
-		 <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">The challenges</h2>
-                    <div class="lead">The Lëtz Cybersecurity Challenge provides up to 30 challenges in the categories:
-                        <ul>
-                            <li>web app security</li>
-                            <li>reverse engineering</li>
-                            <li>crypto & stegano</li>
-                            <li>forensics</li>
-                            <li>network security</li>
-                            <li>wireless (hertzian)</li>
-                            <li>explotation</li>
-                            <li>arduino</li>
-                            <li>mobile</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="img/services/" alt="">
-                    </div>
-		   </div>
-
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-
-		<section id="contact">
-	<div class="banner">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-6">
-					<h2>Contacts</h2>
-                                        <br>
-					<table>
-						<address><tr><th>Email<th><td><a href="mailto:info@securitymadein.lu" class="email">info@securitymadein.lu</a></td></tr></address>
-						<tr><th>Phone<th><td>+352 274 00 98 601</td></tr>
-						<tr><th>Address<th><td>Cyber Security Challenge c/o SECURITYMADEIN.LU<br> 16 Boulevard d'Avranches<br> L-1160 Luxembourg</td></tr>						
-					</table>
-					
-				</div>
-				<div class="col-lg-6">
-
-				</div>
-			</div>
-               
-
-		</div>
-
-                 <div class="container">
-			
-			<div id="privacyPolicy">
-         			<H2>Privacy Policy</H2>
-				<br>
-				<p>by SECURITYMADEIN.LU — Published on Oct 26, 2018 - v1</p>
-
-				<p>
-					Your trust is important to us, and we take privacy and security very, very seriously. If you have any questions or concerns about our privacy policy or our use of data, please get in touch with us
-					<address>
-					<ul>
-						<li>via mail: <a href="mailto:info@securitymadein.lu" class="email">info@securitymadein.lu</a>,</li>
-						<li>via telephone: +352 274 00 98 601,</li>
-						<li>or via mailing: Cyber Security Challenge c/o SECURITYMADEIN.LU, 16 Boulevard d'Avranches, L-1160 Luxembourg.</li>
-					</ul>
-					</address>
-					<p>
-						SECURITYMADEIN.LU will act as the data controller of the Cyber Security Challenge website, since we are the ones determining the means and purposes of the prossessing activities.
-					</p>
-				</p>
-
-				<p>
-					We will never share your information with parties outside SECURITYMADEIN.LU, unless we have explicitly made you aware that we will before you give it to us.
-				</p>
-
-				<H4>Analytics</H4>
-				<p>
-					Cyber Security Challenge website does NOT use any Web analytics systems.
-				</p>
-
-				<H4>Security</H4>
-				<p>
-					When you are surfing our website, we might collect and process web server logs, including IP addresses, user-agents, URLs, date and time logs. We collect those logs for our legitimate interest as these logs enable the security of our website.
-				</p>
-
-				<H4>External links</H4>
-				<p>
-					We might host some links towards third parties websites. Accessing the resources through those links implies your acceptance of their own privacy policies. At least be aware that we cannot be held responsible for what other people do online on their own websites.
-				</p>
-
-				<H4>License & IP</H4>
-
-				Third party code used on this website:
-				<p>
-					A Jekyll port of the Spectral theme by HTML5 UP.
-					Find the original non-jekyll theme at: http://html5up.net/
-				</p>
-				<p>Spectral by HTML5 UP
-				html5up.net | @n33co
-				Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)</p>
-
-                </div>
-
-<!-- /.container -->
-
-	</div>
-</section>
-<!-- /.banner -->
-
-		<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8" id="footer-block1">
-                <p class="copyright text-muted ">Copyright &copy; 2018 Securitymadein.lu</p>
-            </div>
-            <div class="col-md-4" id="footer-block2">
-		
-                <li>
-                        <a href="https://twitter.com/@CSCLuxembourg" class="btn-default btn-lg btn-logo socials-footer"  target="_blank"><i class="fa fa-twitter"></i><span class="network-name"></span> </a>
-                </li>
-                
-                <li>
-                        <a href="https://m.facebook.com/CyberSecurity-Challenge-Luxembourg-336947350423217" class="btn-default btn-lg btn-logo socials-footer"  target="_blank"><i class="fa fa-facebook"></i><span class="network-name"></span> </a>
-                </li>
-                
-                <li>
-                        <a href="https://www.linkedin.com/showcase/cscluxembourg/" class="btn-default btn-lg btn-logo socials-footer"  target="_blank"><i class="fa fa-linkedin"></i><span class="network-name"></span> </a>
-                </li>
-                
-                <li>
-                        <a href="mailto:info@cybersecuritychallenge.lu" class="btn-default btn-lg btn-logo socials-footer"  target="_blank"><i class="fa fa-envelope"></i><span class="network-name"></span> </a>
-                </li>
-                
-
-
-           </div>
-        </div>
-    </div>
-</footer>
-
-		<!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
-
-<!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/landing-page.js"></script>
-
-	</body>
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+</body>
 </html>
