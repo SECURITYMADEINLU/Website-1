@@ -1,76 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CYBERSECURITYCHALLENGE - COMING SOON</title>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <style>
-        html, body{
-            margin:0;
-            padding:0;
-            width:100%;
-            height: 100%;
-        }
-        #landing-page{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width:100%;
-            height:100%;
-            background:#2B5C97;
-        }
-        #counter{
-            font-family: 'Press Start 2P', cursive;
-            color:white;
-            font-weight: bolder;
-            font-size:2.5em;
-        }
-        #landing-page-text{
-            font-family: 'Press Start 2P', cursive;
+<html>
+	{% include head.html %}
 
-            color:white;
-            font-weight: bolder;
-            font-size: 1.5em;
-        }
-    </style>
-</head>
-<body>
-<div id="landing-page">
-    <div id="counter">
-        <span id="demo"></span>
-    </div>
-    <div id="landing-page-img">
-        <img src="../img/services/logo.png">
-    </div>
-    <div id="landing-page-text">
-        <p>THE ADVENTURE IS STARTING SOON...</p>
-    </div>
-</div>
-<script>
-
-    var countDownDate = new Date("Feb 11, 2020 12:00:00").getTime();
-
-    var x = setInterval(function() {
-
-        var now = new Date().getTime();
-
-        var distance = countDownDate - now;
-
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>
-</body>
+	<body>
+		{% include socials.html %} 
+		{% include header.html %}
+		{% include about.html %}
+		{% include letzcybersec.html %}
+		{% include page_content.html %}
+		{% include lettheadventurebegin.html %}
+		{% include contact.html %}
+		{% include footer.html %}
+		{% include js.html %}
+	</body>
 </html>
