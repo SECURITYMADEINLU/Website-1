@@ -62,7 +62,7 @@ DEPENDENCIES
   jekyll-deploy
 
 RUBY VERSION
-   ruby 2.5.5p157
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   1.16.6
+   1.17.2

@@ -7,14 +7,9 @@ description: |
 ---
 
 <h4>03.04.2020</h4>
-Registration - badges - ...
-
+first day
 
 <h4>04.04.2020</h4>
-09h00 - 12h00<br>
-Individuals that compete - price ceremony - ...
+second day
 
-13h00 - 16h00<br>
-Individuals that compete - price ceremony - ...
-
-
+<b>Stay tuned for details...</b>
