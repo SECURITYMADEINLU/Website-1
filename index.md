@@ -1,5 +1,5 @@
 ---
-layout: default_prod
+layout: default
 title:
 subTitle:
 ---
